@@ -1,0 +1,178 @@
+/*soft reset do CSS */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url("../img/fundo\ 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  /*se a tela tiver pelo menos 400 pixel vai carregar este estilo */
+  @media (min-width: 400px) {
+    body {
+      background-size: cover;
+      font-size: 20px;
+    }
+  }
+  @media (min-width: 1200px) {
+     body {
+       background-size: 100vw 100vh;
+     }
+   }
+   header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    background-color: rgba(255, 255, 255, 0.877);
+    font-family: Arial;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  .menu ul{
+    display: flex;
+    justify-content: space-around
+  }
+  .menu a{
+    display: block; 
+    padding:10px 40px;
+    transition: background-color 0.5s,color 0.5s;
+  }
+  a{
+    color: rgb(17, 182, 155);
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+  }
+  .menu a:active,
+  .menu a:hover{
+    background-color: rgba(21, 184, 143, 0.575);
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu li {
+    list-style: none
+  }
+  .borda{
+    margin: 20px auto;
+    border: 2px solid white;
+    padding: 25px 33px;
+    box-sizing: border-box;
+  }
+  .site-subtitle,
+  .site-title{
+    text-align: center;
+    color: white;
+    font-size: 30pt;    
+  }
+  .site-title{
+    font-family:'Hammersmith One', 'sans-serif';
+  }
+  .site-subtitle{
+    font-family:'Cutive Mono', monospace;
+    font-size: 13pt;
+    line-height: 1.5em;
+    font-style: italic;
+  }
+  .secound-st{
+    font-family: 'Lucida Sans';
+    font-size: 26px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }
+  .sobre {
+    margin-bottom: 0;
+    padding: 2em;
+    min-height: 70vh;
+    background-color: white;
+    font-family:'Cutive Mono', monospace ;
+  }
+  .sobre h2 {
+    color: rgb(10, 114, 88) ;
+    font-size: 29pt;
+  }
+  .sobre p {
+    color: rgb(4, 71, 71);
+    text-indent: 1.1em;
+    margin-bottom: 1.2em;
+    font-size: 15pt;
+  }
+  .portfólio{
+    padding: 2em;
+    min-height: 122vh;
+    background-color:rgb(245, 245, 245);
+  }
+  .img-portfolio{
+    height: 220px;
+    width: 317px;
+    border-radius: 23px;
+    transition: transform 0.2s;
+  }
+  .img-portfolio:hover {
+    transform: scale(1.2);
+  }
+  @media (min-width: 1200px) {
+    .img-portfolio {
+      height: 2.5em;
+      width: 2.5em;
+    }
+  }
+  .portfólio h2 {
+    color: rgb(10, 114, 88);
+    font-family: 'Cutive Mono', monospace;
+    margin-bottom: 1.3em;
+    font-size: 29pt;
+  }
+  .portfólio .grid{
+    display: grid;
+    gap: 3em;
+  }
+  @media (min-width: 560px) {
+    .portfólio .grid{
+      grid-template-columns: 280px 280px;
+    }
+  }
+  @media (min-width: 880px) {
+    .portfólio .grid {
+      grid-template-columns: 390px 390px;
+      justify-content: center;
+    }
+  }
+  .portfólio figure{
+    text-align: center;
+    font-family:'Cutive Mono', monospace ;
+  }
+  .contato {
+    padding: 1.5em;
+  }
+  .contato h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Cutive Mono', monospace;
+    margin-bottom: 0.5em;
+    font-size: 25pt;
+    text-align: center;
+  }
+  .contato .icons {
+    text-align: center;
+  }
+  .contato a {
+    color: cornsilk;
+    font-size: 1.6em;
+    transition: text-shadow 0.2s;
+    padding-right: 1.3em;
+  }
+  .contato a:active,
+  .contato a:hover {
+    text-decoration: none;
+    text-shadow: 3px 2px rgba(36, 119, 92, 0.5);
+  }
